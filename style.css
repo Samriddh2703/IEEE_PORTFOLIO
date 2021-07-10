@@ -1,0 +1,311 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            background-color: rgb(25, 6, 68);
+            position: fixed;
+            width: 100%;
+            z-index: 999;
+            padding: 30px 0;
+            font-family: 'Ubuntu', sans-serif;
+            transition: all 0.3s ease;
+            display: flex;
+        }
+
+        .navbar .logo {
+            margin-left: 150px;
+        }
+
+        .navbar .logo a {
+            color: rgb(32, 255, 218);
+            font-size: 35px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .navbar .logo a span {
+            color: rgb(233, 102, 233);
+            transition: all 0.3s ease;
+        }
+
+        .navbar ul {
+            margin-top: 10px;
+            margin-left: 42%;
+            word-spacing: 20px;
+        }
+
+        .navbar .menu li {
+            list-style: none;
+            display: inline-block;
+
+        }
+
+        .navbar .menu li a {
+            display: block;
+            color: rgb(32, 255, 218);
+            font-size: 18px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .navbar .menu li a:hover {
+            color: rgb(233, 102, 233);
+        }
+
+
+
+        .home {
+            display: flex;
+            background: url("https://wallpaperaccess.com/full/2136753.jpg") no-repeat center;
+            height: 100vh;
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .home .home-content {
+            margin-top: 22%;
+        }
+
+        .home .home-content .text-1 {
+            font-size: 27px;
+            margin-left: 150px;
+            color: rgba(255, 255, 255, 0.562);
+        }
+
+        .home .home-content .text-2 {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-size: 60px;
+            font-weight: 600;
+            margin-left: 150px;
+            color: rgba(255, 255, 255, 0.808);
+        }
+
+        .home .home-content .text-3 {
+            font-size: 40px;
+            margin-left: 150px;
+            color: rgba(255, 255, 255, 0.459);
+        }
+
+        .home .home-content a {
+            margin-left: 150px;
+            display: inline-block;
+            background: rgb(25, 6, 68);
+            color: #fff;
+            font-size: 25px;
+            padding: 12px 36px;
+            margin-top: 20px;
+            font-weight: 400;
+            border-radius: 6px;
+            border: 2px solid rgb(25, 6, 68);
+            transition: all 0.3s ease;
+        }
+
+        .home .home-content a:hover {
+            color: rgb(25, 6, 68);
+            background: none;
+        }
+
+        .home .home-content a:visited {
+            background: rgb(25, 6, 68);
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .photo {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            position: absolute;
+            right: 300px;
+            top: 230px;
+        }
+
+        section {
+            padding: 120px 0;
+        }
+
+        section .title {
+            position: relative;
+            text-align: center;
+            font-size: 40px;
+            font-weight: 500;
+            margin-bottom: 60px;
+            padding-bottom: 20px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .about .about-content,
+        .skills .skills-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .about .about-content .left {
+            margin-left: 5%;
+            padding: 0;
+            width: 40%;
+        }
+
+        .about .about-content .left img {
+            height: 400px;
+            width: 400px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+        .about .about-content .right {
+            width: 40%;
+            margin-right: 10%;
+        }
+
+        .about .about-content .right .text {
+            font-size: 25px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .about .about-content .right .text span {
+            color: rgb(25, 6, 68);
+        }
+
+        .about .about-content .right p {
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .about .about-content .right a {
+            display: inline-block;
+            background: rgb(25, 6, 68);
+            color: #fff;
+            font-size: 20px;
+            font-weight: 500;
+            padding: 10px 30px;
+            margin-top: 20px;
+            border-radius: 6px;
+            border: 2px solid rgb(25, 6, 68);
+            transition: all 0.3s ease;
+        }
+
+        .about .about-content .right a:hover {
+            color: rgb(25, 6, 68);
+            background: none;
+        }
+
+
+        .skills .skills-content .column {
+            width: 35%;
+        }
+
+        .skills .skills-content .left {
+            margin-left: 10%;
+        }
+
+        .skills .skills-content .left .text {
+            font-size: 25px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+
+
+        .skills .skills-content .left p {
+            text-align: justify;
+            font-size: 18px;
+        }
+
+        .skills .skills-content .left a {
+            display: inline-block;
+            background: rgb(25, 6, 68);
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 8px 16px;
+            margin-top: 20px;
+            border-radius: 6px;
+            border: 2px solid rgb(25, 6, 68);
+            transition: all 0.3s ease;
+        }
+
+        .skills .skills-content .left a:hover {
+            color: rgb(25, 6, 68);
+            background: none;
+        }
+
+        .skills .skills-content .right {
+            display: inline-block;
+            display: flex;
+            margin-top: -45%;
+            margin-left: 175%;
+        }
+
+        .skills .skills-content .right button {
+            width: 100px;
+            height: 29px;
+            text-align: center;
+            background-color: rgb(34, 7, 56);
+            color: white;
+            box-shadow: lightblue 10px;
+        }
+
+        .skills .skills-content .right li {
+            margin-top: 10px;
+        }
+
+        .contact .contact-content{
+            margin-left: 15%;
+        }
+
+        .contact .contact-content .text {
+            font-size: 25px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .contact .contact-content p {
+            text-align: justify;
+        }
+
+        .contact .contact-content .head {
+            font-size:18px;
+            color: rgb(58, 63, 63);
+            font-weight:800px;
+        }
+
+        .contact .contact-content .subhead {
+            font-size:28px;
+            color: rgb(0, 0, 0);
+            font-weight:1000px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+
+        footer {
+            background: #111;
+            padding: 15px 23px;
+            color: #fff;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        footer span a {
+            color: rgb(238, 238, 238);
+            text-decoration: none;
+        }
+
+        footer span a:hover {
+            color: rgb(93, 93, 206);
+            text-decoration: underline;
+        }
